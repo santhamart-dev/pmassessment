@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primal Assessment!</title>
+    <link rel="stylesheet" href="../test/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</script>
+</head>
+<body>
+    <div class="container">
+        <section class="earthquakWrapper">
+            <h2> Earthquake Map </h2>
+            <div id="map"></div>
+        </section>
+        <section class="formWrapper">
+            <h2> Product Form Submit </h2>
+            <div class="row mt-2 product-form-group">
+                <div class="col-md-3 col-sm-12"></div>
+                <div class="col-md-6 col-sm-12 product-form mt-4">
+                    <form action="../test/submit_products_form.php" method="POST">
+                        <div class="form-group my-2">
+                            <label for="name">Product Name:</label>
+                            <input type="text" class="form-control mt-3" id="name" placeholder="name" name="name">
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="description">Product Description:</label>
+                            <textarea class="form-control mt-3" type="description" id="description" placeholder="description" rows="3" name="description"></textarea>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="price">Product Price:</label>
+                            <input type="number" class="form-control mt-3" id="price" placeholder="price" name="price">
+                        </div>
+                
+                
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-3 col-sm-12"></div>
+                
+    
+            </div>
+           
+        </section>
+       
+    </div>
+   
+    <script src="script.js"></script>  
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEVNpo8RLvjgac3FpsJoi1LvGk-XqYzRo&callback=initMap"></script>
+</body>
+</html>
